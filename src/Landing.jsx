@@ -13,6 +13,9 @@ import action1 from './imgs/action1.svg';
 import action2 from './imgs/action2.svg';
 import action3 from './imgs/action3.svg';
 
+//Component
+import Scratchcard from './ScratchOff';
+
 function Landing() {
 
 return (
@@ -40,11 +43,11 @@ return (
 
                 {/* FIXME: srcoll-link  */}
                 <li onClick={()=>{
-                  const k = document.querySelector('.action-change');
+                  const k = document.querySelector('.what-we-do');
                   k.scrollIntoView({behavior: "smooth" , block: "start", inline: "start"});
                 }}>目前成果</li>
                 <li onClick={()=>{
-                  const k = document.querySelector('.do-you-know');
+                  const k = document.querySelector('.what-we-do');
                   k.scrollIntoView({behavior: "smooth"});
                 }}>常見問題</li>
                 <li onClick={()=>{
@@ -218,6 +221,17 @@ return (
       <p className='subtitle'>既然你誠心誠意的發問了  <br/>
           我們就大發慈悲的告訴你</p>
     </div>
+
+    <div className='scratch-off'>
+      <Scratchcard/>
+    </div>
+
+    <div className='what-we-do'>
+      <h2 className='main-title'>目前成果</h2>
+      <p className='subtitle'>既然你誠心誠意的發問了  <br/>
+          我們就大發慈悲的告訴你</p>
+    </div>
+
 
 
   </>
